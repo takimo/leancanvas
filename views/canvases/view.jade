@@ -21,7 +21,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[1]}
+            if(canvas[1])
+              | #{canvas[1]}
         td.span2
           h5
             span.badge 4
@@ -31,7 +32,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[4]}
+            if(canvas[4])
+              | #{canvas[4]}
         td.span2(rowspan=2)
           h5
             span.badge 3
@@ -41,7 +43,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[3]}
+            if(canvas[3])
+              | #{canvas[3]}
         td.span2
           h5
             span.badge 9
@@ -51,7 +54,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[9]}
+            if(canvas[9])
+              | #{canvas[9]}
         td.span2(rowspan=2)
           h5
             span.badge 2
@@ -61,7 +65,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[2]}
+            if(canvas[2])
+              | #{canvas[2]}
       tr
         td
           h5
@@ -72,7 +77,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[8]}
+            if(canvas[8])
+              | #{canvas[8]}
         td
           h5
             span.badge 5
@@ -82,7 +88,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[5]}
+            if(canvas[5])
+              | #{canvas[5]}
       tr
         td(colspan=3)
           h5
@@ -93,6 +100,8 @@
             contenteditable="true",
             style="height:90%"
           )
+            if(canvas[7])
+              | #{canvas[7]}
         td(colspan=2)
           h5
             span.badge 6
@@ -102,7 +111,8 @@
             contenteditable="true",
             style="height:90%"
           )
-            #{canvas[6]}
+            if(canvas[6])
+              | #{canvas[6]}
 
 .container
   input#id(type="hidden", value=id)

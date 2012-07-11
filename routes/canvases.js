@@ -6,7 +6,7 @@ var canvases = require('dirty')('./data/canvas.db');
 
 exports.view = function(req, res){
   var id = req.params.id;
-  var canvas = JSON.parse(canvases.get(id)) || {};
+  var canvas = JSON.parse(canvases.get(id) || "{}");
 
   var buildedCanvas = {};
   for(var i=0;i<9;i++){
