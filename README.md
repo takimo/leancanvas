@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/takimo/leancanvas.git
-cd cohort-my-admin
+cd leancanvas
 mkdir data
 chmod 755 data
 npm install
