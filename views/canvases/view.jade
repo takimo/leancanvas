@@ -1,0 +1,112 @@
+
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      a.brand(href="#")= title
+      .nav-collapse
+        ul.nav
+          li.active
+            a(href="/canvases/view/" + id) #{id}
+
+.container
+  table.table.table-bordered(style="height:450px")
+    tbody
+      tr
+        td.span2(rowspan=2)
+          h5
+            span.badge 1
+            span  PROBLEM
+          div.item(
+            data-label="1"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[1]}
+        td.span2
+          h5
+            span.badge 4
+            span  SOLUTION
+          div.item(
+            data-label="4"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[4]}
+        td.span2(rowspan=2)
+          h5
+            span.badge 3
+            span  UNIQUE VALUE PROPOSITION
+          div.item(
+            data-label="3"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[3]}
+        td.span2
+          h5
+            span.badge 9
+            span  UNFAIR ADVANTAGE
+          div.item(
+            data-label="9"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[9]}
+        td.span2(rowspan=2)
+          h5
+            span.badge 2
+            span  CUSTOMER SEGMENTS
+          div.item(
+            data-label="2"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[2]}
+      tr
+        td
+          h5
+            span.badge 8
+            span  KEY METRICS
+          div.item(
+            data-label="8"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[8]}
+        td
+          h5
+            span.badge 5
+            span  CHANNELS
+          div.item(
+            data-label="5"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[5]}
+      tr
+        td(colspan=3)
+          h5
+            span.badge 7
+            span  COST STRUCTURE
+          div.item(
+            data-label="7"
+            contenteditable="true",
+            style="height:90%"
+          )
+        td(colspan=2)
+          h5
+            span.badge 6
+            span  REVENUE STREAMS
+          div.item(
+            data-label="6"
+            contenteditable="true",
+            style="height:90%"
+          )
+            #{canvas[6]}
+
+.container
+  input#id(type="hidden", value=id)
+  a.btn.btn-primary(href="javascript:void(0);") send
+
+script(src='/javascripts/canvas.js');
+  
