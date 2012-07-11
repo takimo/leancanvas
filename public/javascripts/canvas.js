@@ -1,7 +1,7 @@
 Namespace()
 .use('brook.dom.compat dataset')
 .apply(function(ns){
-  var button = $('a');
+  var button = $('a.btn');
   var id = $('#id');
 
   button.click(function(event){
@@ -21,7 +21,11 @@ Namespace()
       url: "/canvases/update/" + id.val(),
       data: data,
       success: function(msg){
-        alert( "Data Saved: " + msg );
+        var alertArea = $('.alert');
+        alertArea.show();
+        setTimeout(function(){
+          alertArea.hide();
+        }, 2000);
       }
     });
   });
